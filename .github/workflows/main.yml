@@ -24,4 +24,4 @@ jobs:
 
      #finally build your app with the latest command
       - name: Build and test with Maven
-        run: mvn -f simpleapi/pom.xml clean install
+        run: mvn -f tp2-spring/simpleapi/pom.xml clean install
