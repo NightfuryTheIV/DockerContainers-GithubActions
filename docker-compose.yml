@@ -1,6 +1,6 @@
 services:
     backend:
-        build: ./tp1-spring/simpleapi
+        build: ./tp2-spring/simpleapi
         networks: # made two networks so that httpd and database don't communicate directly, but only through the backend
         - backend-database-network
         - httpd-backend-network
@@ -15,7 +15,7 @@ services:
         - postgresdatafolder:/var/lib/postgresql/data
 
     httpd:
-        build: ./tp1-http
+        build: ./tp2-http
         ports:
         - "80:80"
         networks:
